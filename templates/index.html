@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Book Recommender System</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+    <style>
+      body {
+        background-color: black;
+      }
+      .navbar {
+        background-color: #ffcc00; /* Yellow background */
+        border-radius: 0;
+      }
+      .navbar-brand,
+      .nav > li > a {
+        color: black; /* Solid black text color */
+        font-size: 20px; /* Increase font size */
+        font-weight: bold; /* Font thickness */
+        font-family: "Arial", sans-serif; /* Choose a suitable font family */
+        transition: color 0.3s;
+      }
+      .navbar-brand:hover,
+      .nav > li > a:hover {
+        color: #007bff; /* Blue color on hover */
+      }
+      .navbar-right {
+        margin-right: 20px;
+      }
+    
+      .navbar-inverse .navbar-toggle .icon-bar {
+        color: black;
+        background-color: #333; /* Color of the menu icon bars */
+      }
+
+      /* Custom styling */
+      .center-content {
+        text-align: center;
+        margin-top: 20vh; /* Adjust as needed for vertical centering */
+      }
+      .center-content h1 {
+        font-size: 48px;
+        font-weight: bold;
+        color: white; /* White text color */
+        margin-bottom: 20px;
+      }
+      .center-content p {
+        font-size: 24px;
+        color: white; /* White text color */
+      }
+      .center-content a {
+        margin-top: 30px; /* Adjust as needed */
+        animation: bounce 2s infinite; /* Animation effect */
+      }
+      .center-content a.btn-primary {
+        background-color: #ffcc00;
+        color: black;
+        border-color: #ffcc00;
+      }
+      .center-content a.btn-primary:hover {
+        background-color: #00aa00; /* Green color on hover */
+        border-color: #00aa00;
+        color: white;
+      }
+
+      @keyframes bounce {
+        0%,
+        20%,
+        50%,
+        80%,
+        100% {
+          transform: translateY(0);
+        }
+        40% {
+          transform: translateY(-20px);
+        }
+        60% {
+          transform: translateY(-10px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand">My Book Recommender</a>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Recommended</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 center-content">
+          <h1>Welcome to Book Recommender</h1>
+          <p>Discover books tailored just for you!</p>
+          <a href="/recommend" class="btn btn-primary btn-lg">Get Recommendations</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
